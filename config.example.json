@@ -1,0 +1,12 @@
+{
+  "pbeChampionsDirectory": "",
+  "liveClientEndpoint": "https://127.0.0.1:2999/liveclientdata/playerlist",
+  "pollIntervalMs": 3000,
+  "modLibrary": "mods",
+  "selectionManifest": "state\\selection.json",
+  "adapter": {
+    "enabled": false,
+    "command": "",
+    "arguments": ["--manifest", "{manifest}"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "rift-legacy",
+  "version": "1.0.1",
+  "description": "Relive the Rift",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable",
+    "dist:dir": "electron-builder --win --dir"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "dev.xitfin.riftlegacy",
+    "productName": "Rift Legacy",
+    "asar": false,
+    "files": ["electron/**/*", "assets/**/*", "mods/**/*", "LTK Manager/**/*", "RiftLegacyBackend.exe", "config.example.json"],
+    "win": { "target": "portable", "icon": "assets/rift-legacy-icon.png" }
+  }
+}
